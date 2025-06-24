@@ -43,7 +43,7 @@ A sleek, minimal, Trello-inspired task management board built with **Nextjs**, *
 ```bash
 # 1. Clone the repository
 git clone 
-cd task-board
+cd task-management
 
 # 2. Install dependencies
 npm install
@@ -55,7 +55,7 @@ npm run dev
 ## ✨ Planned Improvements
 
 * ✅ Reordering tasks within the same column
-* 🔁 Sync with a backend (Supabase, Firebase, or REST API)
+* 🔁 Sync with a backend (Supabase)
 * 🔔 Toast notifications (e.g., task added, edited, deleted)
 * 🌈 Theme toggle (light/dark)
 
@@ -65,7 +65,7 @@ npm run dev
 
 ## 🙌 Credits
 
-* Inspired by Trello, Linear, and Notion task views
+* Inspired by [Frontend Task]([https://lucide.dev/](https://task-mgt-phi.vercel.app/))
 * Icons from [Lucide](https://lucide.dev/)
 * Styling via [Tailwind CSS](https://tailwindcss.com/)
 

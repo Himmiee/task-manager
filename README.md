@@ -69,3 +69,4 @@ npm run dev
 * Icons from [Lucide](https://lucide.dev/)
 * Styling via [Tailwind CSS](https://tailwindcss.com/)
 
+# task-manager

@@ -84,7 +84,7 @@ export const TaskCard: React.FC<Props> = ({
         </DropdownMenu>
       </div>
       {description && (
-        <p className="text-xs text-gray-300 whitespace-pre-wrap">
+        <p className="text-xs text-gray-300 whitespace-pre-wrap break-words">
           {description}
         </p>
       )}

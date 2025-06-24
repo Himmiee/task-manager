@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# 📝 Task Board - Lightweight Project Management Tool
 
-First, run the development server:
+A sleek, minimal, Trello-inspired task management board built with **Nextjs**, **Zustand**, **React DnD**, and **Tailwind CSS**. Supports drag-and-drop functionality, task editing, and persistent state — all in a smooth dark UI.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Features
+
+- 🔁 **Multi-column Layout** — Includes customizable task columns like `Backlog`, `In Progress`, `Review`, `Done`, etc.
+- 🎯 **Task Creation & Editing** — Add or edit tasks using a form with validation (Yup + React Hook Form).
+- ✏️ **Inline Controls** — Mini task cards with dropdown menu for editing or deleting.
+- 📦 **Persistent State** — Uses Zustand + middleware to persist tasks via `localStorage`.
+- 🧲 **Drag & Drop** — Move tasks between columns using `react-dnd`.
+- 💅 **Dark Mode UI** — Styled with Tailwind CSS for a clean and accessible interface.
+
+## 🧰 Tech Stack
+
+- **Nextjs** with functional components
+- **Zustand** (with `persist` middleware)
+- **React DnD** (`react-dnd-html5-backend`)
+- **React Hook Form** + **Yup**
+- **Tailwind CSS**
+- **TypeScript**
+
+## 📂 Project Structure
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+├── layout/
+│   ├── task.tsx     # Drop target for columns
+│   ├── card.tsx       # Individual draggable task card
+│   ├── form.tsx       # Controlled form for adding/editing tasks
+│   └── ...
+├── helpers/
+│   └── store.ts           # Zustand store (persisted)
+│   └── validation.ts      # Yup schema + types
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+````
 
-To learn more about Next.js, take a look at the following resources:
+## 📦 Getting Started
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# 1. Clone the repository
+git clone 
+cd task-board
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# 2. Install dependencies
+npm install
 
-## Deploy on Vercel
+# 3. Run the dev server
+npm run dev
+````
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ✨ Planned Improvements
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* ✅ Reordering tasks within the same column
+* 🔁 Sync with a backend (Supabase, Firebase, or REST API)
+* 🔔 Toast notifications (e.g., task added, edited, deleted)
+* 🌈 Theme toggle (light/dark)
+
+## 📸 Demo Preview
+
+> Coming soon — GIF or video walkthrough
+
+## 🙌 Credits
+
+* Inspired by Trello, Linear, and Notion task views
+* Icons from [Lucide](https://lucide.dev/)
+* Styling via [Tailwind CSS](https://tailwindcss.com/)
+
